@@ -1,0 +1,25 @@
+.tabs__list .tabs__item > a:hover {
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.tabs__list-wrapper .tabs__toggle::before {
+  content: "Choose a menu: ";
+  position: absolute;
+  right: 100%;
+  width: 12.5rem;
+  color: var(--secondary-text-color);
+  pointer-events: none;
+}
+
+.tabs__list-wrapper .tabs__toggle:focus {
+  outline: none;
+}
+/* ------------- Media Queries ------------- */
+@media screen and (max-width: 992px) {
+  .tabs__list .tabs__item {
+    margin: 0;
+  }
+  .tabs__list .tabs__item a::after {
+    display: none;
+  }
+}
