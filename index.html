@@ -5,9 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/canella.theme.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devdevil94/DD-Tabbed/css/tabbed.css"
+    />
+    <link rel="stylesheet" href="css/menus.css" />
     <title>Canella Restaurant</title>
   </head>
   <body>
-    <h1>Canella Restaurant</h1>
+    <section>
+      <div class="tabs">
+        <div class="tabs__list-wrapper">
+          <button
+            class="tabs__toggle bg-secondary text-white"
+            data-list-target="tabs-list-canella"
+          >
+            Menus
+          </button>
+
+          <ul id="tabs-list-canella" class="tabs__list">
+            <li class="tabs__item">
+              <a
+                href="#!"
+                class="text-dark active"
+                data-tab-target="tab-content-breakfast"
+                >Breakfast</a
+              >
+            </li>
+            <li class="tabs__item">
+              <a href="#!" class="text-dark" data-tab-target="tab-content-lunch"
+                >Lunch</a
+              >
+            </li>
+            <li class="tabs__item">
+              <a
+                href="#!"
+                class="text-dark"
+                data-tab-target="tab-content-dinner"
+                >Dinner</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="tabs__content active" id="tab-content-breakfast">
+          Breakfast Menu
+        </div>
+        <div class="tabs__content" id="tab-content-lunch">
+          Lunch Menu
+        </div>
+        <div class="tabs__content" id="tab-content-dinner">
+          Dinner Menu
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/devdevil94/DD-Tabbed/js/tabbed.js"></script>
   </body>
 </html>
