@@ -1,25 +1,70 @@
-.tabs__list .tabs__item > a:hover {
+section {
+  padding: 5rem 0;
+}
+.tabs {
+  width: 100%;
+  margin: 0;
+}
+.tabs__item {
+  margin: 0;
+}
+.tabs__item > a::after {
+  display: none;
+}
+.tabs__item > a:hover {
   background-color: rgba(0, 0, 0, 0.11);
 }
-
-.tabs__list-wrapper .tabs__toggle::before {
-  content: "Choose a menu: ";
-  position: absolute;
-  right: 100%;
-  width: 12.5rem;
-  color: var(--secondary-text-color);
-  pointer-events: none;
-}
-
-.tabs__list-wrapper .tabs__toggle:focus {
+.tabs__toggle:focus {
   outline: none;
 }
+.tabs__content {
+  padding: 0;
+  height: auto;
+}
+.tabs__contents {
+  padding: 2rem 0;
+}
+/* ------------- Menus Section ------------- */
+.itemBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.itemBox__info {
+  /* padding: 0.5rem 0; */
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.itemBox__name,
+.itemBox__price {
+  font-size: 2rem;
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+}
+.itemBox__name {
+  margin-right: 0.5rem;
+  letter-spacing: 1px;
+}
+.itemBox__price {
+  padding-left: 0.5rem;
+}
+.itemBox__imgWrapper {
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+  overflow: hidden;
+  /* text-align: center; */
+}
+.itemBox__img {
+  width: 20rem;
+  height: 15rem;
+}
+
 /* ------------- Media Queries ------------- */
-@media screen and (max-width: 992px) {
-  .tabs__list .tabs__item {
-    margin: 0;
-  }
-  .tabs__list .tabs__item a::after {
-    display: none;
-  }
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
