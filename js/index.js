@@ -3,13 +3,22 @@ $(document).ready(function () {
 
   menus.forEach((menu) => {
     const menuTabContent = $(`#tab-content-${menu.name}`);
-    console.log(menuTabContent);
+
     menu.items.forEach((item) => {
       const itemBox = menuItemTemplate.content.querySelector(".itemBox");
 
-      const img = itemBox.querySelector(".itemBox__img");
-      img.src = `images/${item.imgUrl}.jpg`;
-      img.alt = item.name;
+      const itemImg = itemBox.querySelector(".itemBox__img");
+      itemImg.src = `images/${item.imgUrl}.jpg`;
+      itemImg.alt = item.name;
+
+      const itemName = itemBox.querySelector(".itemBox__name");
+      $(itemName).text(item.name);
+
+      const itemPrice = itemBox.querySelector(".itemBox__price");
+      $(itemPrice).text("$" + item.price);
+
+      const itemDescription = itemBox.querySelector(".itemBox__description");
+      $(itemDescription).text(item.description);
 
       const node = document.importNode(itemBox, true);
       menuTabContent.append($(node));
