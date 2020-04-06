@@ -7,58 +7,92 @@
     <link rel="stylesheet" href="css/global.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devdevil94/DD-Tabbed/css/tabbed.css"
+      href="https://cdn.jsdelivr.net/gh/devdevil94/DD-Tabbed/css/tabbed@1.0.0.css"
     />
     <link rel="stylesheet" href="css/menus.css" />
     <title>Canella Restaurant</title>
   </head>
   <body>
-    <section>
-      <div class="tabs">
-        <div class="tabs__list-wrapper">
-          <button
-            class="tabs__toggle bg-secondary text-white"
-            data-list-target="tabs-list-canella"
-          >
-            Menus
-          </button>
+    <section id="menus" class="bg-white">
+      <template id="itemBox__template">
+        <div class="itemBox">
+          <div class="itemBox__imgWrapper rounded">
+            <img class="itemBox__img responsive rounded" />
+          </div>
+          <div class="itemBox__dataWrapper">
+            <div class="itemBox__info">
+              <h2 class="itemBox__name text-dark uppercase"></h2>
+              <h3 class="itemBox__price text-primary"></h3>
+            </div>
+            <p class="itemBox__description text-grey"></p>
+          </div>
+        </div>
+      </template>
+      <div class="container">
+        <div class="tabs">
+          <div class="tabs__list-wrapper">
+            <button
+              class="tabs__toggle bg-secondary text-white"
+              data-list-target="tabs-list-canella"
+            >
+              Menus
+            </button>
 
-          <ul id="tabs-list-canella" class="tabs__list">
-            <li class="tabs__item">
-              <a
-                href="#!"
-                class="text-dark active"
-                data-tab-target="tab-content-breakfast"
-                >Breakfast</a
-              >
-            </li>
-            <li class="tabs__item">
-              <a href="#!" class="text-dark" data-tab-target="tab-content-lunch"
-                >Lunch</a
-              >
-            </li>
-            <li class="tabs__item">
-              <a
-                href="#!"
-                class="text-dark"
-                data-tab-target="tab-content-dinner"
-                >Dinner</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="tabs__content active" id="tab-content-breakfast">
-          Breakfast Menu
-        </div>
-        <div class="tabs__content" id="tab-content-lunch">
-          Lunch Menu
-        </div>
-        <div class="tabs__content" id="tab-content-dinner">
-          Dinner Menu
+            <ul id="tabs-list-canella" class="tabs__list">
+              <li class="tabs__item">
+                <a
+                  href="#!"
+                  class="text-dark active"
+                  data-tab-target="tab-content-breakfast"
+                  >Breakfast</a
+                >
+              </li>
+              <li class="tabs__item">
+                <a
+                  href="#!"
+                  class="text-dark"
+                  data-tab-target="tab-content-lunch"
+                  >Lunch</a
+                >
+              </li>
+              <li class="tabs__item">
+                <a
+                  href="#!"
+                  class="text-dark"
+                  data-tab-target="tab-content-dinner"
+                  >Dinner</a
+                >
+              </li>
+              <!-- <li class="tabs__item">
+                <a
+                  href="#!"
+                  class="text-dark"
+                  data-tab-target="tab-content-drinks"
+                  >Drinks</a
+                >
+              </li> -->
+            </ul>
+          </div>
+          <div class="tabs__contents">
+            <div class="tabs__content active" id="tab-content-breakfast">
+              <div class="menuBox"></div>
+            </div>
+            <div class="tabs__content" id="tab-content-lunch">
+              <div class="menuBox"></div>
+            </div>
+            <div class="tabs__content" id="tab-content-dinner">
+              <div class="menuBox"></div>
+            </div>
+            <!-- <div class="tabs__content" id="tab-content-drinks">
+              Drinks Menu
+            </div> -->
+          </div>
         </div>
       </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/devdevil94/DD-Tabbed/js/tabbed.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/devdevil94/DD-Tabbed/js/tabbed@1.0.0.js"></script>
+    <script src="js/menus.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
