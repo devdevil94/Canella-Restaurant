@@ -2,7 +2,7 @@ $(document).ready(function () {
   const menuItemTemplate = $("template#itemBox__template")[0];
 
   menus.forEach((menu) => {
-    const menuTabContent = $(`#tab-content-${menu.name}`);
+    const menuTabContent = $(`#tab-content-${menu.name} > .menuBox`);
 
     menu.items.forEach((item) => {
       const itemBox = menuItemTemplate.content.querySelector(".itemBox");

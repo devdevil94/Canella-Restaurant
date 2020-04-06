@@ -3,6 +3,13 @@ const menus = [
     name: "breakfast",
     items: [
       {
+        name: "Scrambled Egg with Toasted Bread",
+        price: 20.9,
+        imgUrl:
+          "toaster-bread-scrambled-eggs-grilled-tomato-and-sausage-693268",
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut magni eaque.`,
+      },
+      {
         name: "Pancakes",
         price: 12.9,
         imgUrl: "pancake-on-plate-2113556",
@@ -18,13 +25,6 @@ const menus = [
         name: "Breakfast Cereal",
         price: 16.5,
         imgUrl: "blueberries-breakfast-cereals-food-4815",
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut magni eaque.`,
-      },
-      {
-        name: "Scrambled Egg with Toasted Bread",
-        price: 20.9,
-        imgUrl:
-          "toaster-bread-scrambled-eggs-grilled-tomato-and-sausage-693268",
         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut magni eaque.`,
       },
     ],
