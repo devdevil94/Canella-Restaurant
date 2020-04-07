@@ -1,0 +1,25 @@
+/* ------------- Reservation Form Section ------------- */
+.fields--inline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* TODO: Move input field styles to global */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.field__label {
+  margin-bottom: 0.5rem;
+}
+.field__input {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.reservationForm__btn {
+  padding: 1.3rem 2rem;
+}
+/* ------------- Media Queries ------------- */
