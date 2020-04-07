@@ -1,0 +1,21 @@
+.contactBox__row {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contactBox__column {
+  width: 20rem;
+  margin: 0 auto;
+}
+.contactBox__column p {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.contactBox__column h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}
