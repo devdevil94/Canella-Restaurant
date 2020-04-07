@@ -1,4 +1,7 @@
 /* ------------- Reservation Form Section ------------- */
+#reservation-form {
+  text-align: center;
+}
 .fields--inline {
   display: flex;
   flex-direction: column;
@@ -13,6 +16,7 @@
 }
 .field__label {
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 .field__input {
   padding: 1rem;
@@ -23,3 +27,16 @@
   padding: 1.3rem 2rem;
 }
 /* ------------- Media Queries ------------- */
+
+@media (min-width: 992px) {
+  .fields--inline {
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+  .field {
+    width: 40rem;
+  }
+  .fields--inline:nth-child(2) .field {
+    width: 23rem;
+  }
+}
