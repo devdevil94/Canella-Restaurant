@@ -2,6 +2,14 @@
 #reservation-form {
   text-align: center;
 }
+.reservationHeader__title,
+.reservationHeader__subtitle {
+  text-align: center;
+}
+.reservationHeader__title {
+  font-size: 6.5rem;
+  font-family: "Dancing Script", cursive;
+}
 .fields--inline {
   display: flex;
   flex-direction: column;
@@ -24,7 +32,8 @@
 }
 
 .reservationForm__btn {
-  padding: 1.3rem 2rem;
+  padding: 2rem;
+  font-size: 1.6rem;
 }
 /* ------------- Media Queries ------------- */
 
