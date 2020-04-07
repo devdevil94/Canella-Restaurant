@@ -19,3 +19,14 @@
   font-family: "Oswald", sans-serif;
   letter-spacing: 2px;
 }
+
+@media (min-width: 425px) {
+  .contactBox__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .contactBox__row {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
