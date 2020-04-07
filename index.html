@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/reservations.css" />
     <title>Canella Restaurant</title>
   </head>
-  <body>
+  <body class="bg-white">
     <section id="menus" class="bg-white">
       <template id="itemBox__template">
         <div class="itemBox">
@@ -103,6 +103,11 @@
     </section>
     <section id="reservation">
       <div class="container">
+        <h1 class="reservationHeader__title text-dark">Reserve Now</h1>
+        <!-- <h2 class="reservationHeader__subtitle text-white">
+          Experience the taste of authenticity
+        </h2> -->
+        <div class="separator bg-primary"></div>
         <form id="reservation-form" class="reservationForm">
           <div class="fields--inline">
             <div class="field">
@@ -145,7 +150,7 @@
           </div>
           <button
             type="submit"
-            class="bg-primary text-white uppercase reservationForm__btn"
+            class="bg-primary text-white uppercase rounded reservationForm__btn"
           >
             Make a reservation
           </button>
