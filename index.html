@@ -9,12 +9,46 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devdevil94/DD-Tabbed/css/tabbed@1.0.1.css"
     />
+
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/solid.min.css" />
+    <link rel="stylesheet" href="css/brands.min.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/menus.css" />
     <link rel="stylesheet" href="css/reservations.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <title>Canella Restaurant</title>
   </head>
   <body class="bg-white">
+    <header>
+      <nav class="navbar">
+        <div class="navbar__top bg-white">
+          <button class="navbar__menuToggle text-dark">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="#!" class="navbar__brand">LOGO</a>
+          <button class="navbar__socialToggle text-dark">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+        </div>
+
+        <ul class="navbar__aside">
+          <li class="navbar__link">
+            <a href="#!" class="text-dark uppercase">Home</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#!" class="text-dark uppercase">Menu</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#!" class="text-dark uppercase">About Us</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#!" class="text-dark uppercase">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <section id="menus" class="bg-white">
       <template id="itemBox__template">
         <div class="itemBox">
