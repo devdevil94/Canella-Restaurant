@@ -30,7 +30,9 @@
   padding: 1rem;
   font-size: 1.6rem;
 }
-
+.field__input:last-child {
+  height: 48px;
+}
 .reservationForm__btn {
   padding: 2rem;
   font-size: 1.6rem;
