@@ -1,0 +1,66 @@
+:root {
+  --top-navbar-height: 6rem;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar__top {
+  height: var(--top-navbar-height);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__menuToggle,
+.navbar__socialToggle {
+  font-size: 2rem;
+  height: 100%;
+  width: var(--top-navbar-height);
+  transition: all 0.3s;
+}
+.navbar__menuToggle:hover,
+.navbar__socialToggle:hover {
+  color: var(--primary-color);
+}
+.navbar__menuToggle:focus,
+.navbar__socialToggle:focus {
+  outline: none;
+}
+.navbar__menuToggle.active,
+.navbar__socialToggle.active {
+  color: var(--primary-color);
+}
+
+.navbar__aside {
+  padding: 2rem 0;
+  width: 25rem;
+  height: 100vh;
+  position: fixed;
+  top: var(--top-navbar-height);
+  transform: translateX(-100%);
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  transition: transform 0.5s;
+  background-color: rgb(247, 221, 188);
+}
+.navbar__aside.active {
+  transform: translateX(0);
+}
+
+.navbar__link a {
+  padding: 1rem 2rem;
+  width: 100%;
+  display: block;
+  transition: all 0.2s;
+  font-weight: bold;
+}
+.navbar__link a:hover {
+  color: var(--primary-color);
+}
