@@ -1,4 +1,7 @@
 /* ------------- Reservation Form Section ------------- */
+#reservation {
+  padding: 5rem 0;
+}
 #reservation-form {
   text-align: center;
 }

@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 .navbar__menuToggle,
@@ -45,7 +46,7 @@
   position: fixed;
   top: var(--top-navbar-height);
   transform: translateX(-100%);
-  box-shadow: 0 0 22px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   z-index: 10;
   transition: transform 0.5s;
   background-color: rgb(247, 221, 188);
