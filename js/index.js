@@ -24,4 +24,17 @@ $(document).ready(function () {
       menuTabContent.append($(node));
     });
   });
+
+  $(".navbar__menuToggle").click(() => {
+    $(".navbar__aside").toggleClass("active");
+    $(".navbar__menuToggle").toggleClass("active");
+  });
+
+  $(document).on("click", (event) => {
+    const navbar = $(".navbar").first();
+    if (navbar !== event.target && !navbar.has(event.target).length) {
+      $(".navbar__aside").removeClass("active");
+      $(".navbar__menuToggle").removeClass("active");
+    }
+  });
 });
