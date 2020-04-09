@@ -25,14 +25,30 @@
   <body class="bg-white">
     <header>
       <nav class="navbar">
-        <div class="navbar__top bg-white">
-          <button class="navbar__menuToggle text-dark">
+        <div class="bg-white navbar__top">
+          <button class="text-dark navbar__menuToggle">
             <i class="fas fa-bars"></i>
           </button>
           <a href="#!" class="navbar__brand text-primary">Canella</a>
-          <button class="navbar__socialToggle text-dark">
-            <i class="fas fa-ellipsis-h"></i>
-          </button>
+          <div class="navbar__socialBox">
+            <button class="text-dark navbar__socialToggle show">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+            <ul class="navbar__socialList bg-primary">
+              <li class="navbar__socialItem">
+                <a href="#!"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="navbar__socialItem">
+                <a href="#!"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="navbar__socialItem">
+                <a href="#!"><i class="fab fa-google-plus-g"></i></a>
+              </li>
+              <li class="navbar__socialItem">
+                <a href="#!"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <ul class="navbar__aside">
@@ -86,7 +102,7 @@
             />
           </div>
           <div class="aboutBox__column">
-            <h2 class="text-secondary aboutBox__header1">Welcome</h2>
+            <h2 class="text-secondary aboutBox__header1">Welcome to Canella</h2>
             <h3 class="text-dark uppercase aboutBox__header2">
               The best place to enjoy Italian cuisine
             </h3>
