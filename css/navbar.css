@@ -1,5 +1,5 @@
 :root {
-  --top-navbar-height: 6rem;
+  --top-navbar-height: 8rem;
 }
 
 .navbar {
@@ -37,6 +37,13 @@
 .navbar__menuToggle.active,
 .navbar__socialToggle.active {
   color: var(--primary-color);
+}
+
+.navbar__brand {
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+  font-size: 4rem;
+  display: inline-block;
 }
 
 .navbar__aside {
