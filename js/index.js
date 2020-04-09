@@ -25,16 +25,34 @@ $(document).ready(function () {
     });
   });
 
-  $(".navbar__menuToggle").click(() => {
-    $(".navbar__aside").toggleClass("active");
-    $(".navbar__menuToggle").toggleClass("active");
+  const menuToggleBtn = $(".navbar__menuToggle");
+  const socialToggleBtn = $(".navbar__socialToggle");
+  const sideBar = $(".navbar__aside");
+  const socialBar = $(".navbar__socialList");
+
+  menuToggleBtn.click(() => {
+    sideBar.toggleClass("active");
+    menuToggleBtn.toggleClass("active");
+
+    socialBar.removeClass("active");
+    socialToggleBtn.removeClass("active");
+  });
+  socialToggleBtn.click(() => {
+    socialBar.toggleClass("active");
+    socialToggleBtn.toggleClass("active");
+
+    sideBar.removeClass("active");
+    menuToggleBtn.removeClass("active");
   });
 
   $(document).on("click", (event) => {
     const navbar = $(".navbar").first();
     if (navbar !== event.target && !navbar.has(event.target).length) {
-      $(".navbar__aside").removeClass("active");
-      $(".navbar__menuToggle").removeClass("active");
+      sideBar.removeClass("active");
+      menuToggleBtn.removeClass("active");
+
+      socialBar.removeClass("active");
+      socialToggleBtn.removeClass("active");
     }
   });
 });
