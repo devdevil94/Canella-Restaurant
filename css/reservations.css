@@ -28,6 +28,7 @@
 .field__label {
   margin-bottom: 0.5rem;
   text-align: left;
+  color: var(--secondary-color);
 }
 .field__input {
   padding: 1rem;
@@ -39,6 +40,10 @@
 .reservationForm__btn {
   padding: 2rem;
   font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.reservationForm__btn:hover {
+  background-color: var(--secondary-color);
 }
 /* ------------- Media Queries ------------- */
 

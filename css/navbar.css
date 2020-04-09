@@ -68,6 +68,8 @@
   display: block;
   transition: all 0.2s;
   font-weight: bold;
+  font-family: "Oswald";
+  letter-spacing: 1px;
 }
 .navbar__link a:hover {
   color: var(--primary-color);

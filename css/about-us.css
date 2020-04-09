@@ -11,9 +11,11 @@
 }
 .aboutBox__column:first-child {
   object-fit: cover;
+  /* max-height: 37rem; */
 }
 .aboutBox__img {
   width: 100%;
+  height: 100%;
 }
 .aboutBox__header1 {
   font-size: 2rem;
@@ -23,6 +25,7 @@
 .aboutBox__header2 {
   font-size: 3rem;
   font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
 }
 .aboutBox__paragraph {
   font-size: 1.6rem;
@@ -31,6 +34,10 @@
 .aboutBox__btn {
   padding: 1rem 2rem;
   font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.aboutBox__btn:hover {
+  background-color: var(--secondary-color);
 }
 
 @media (min-width: 600px) {
