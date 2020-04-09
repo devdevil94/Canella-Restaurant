@@ -1,5 +1,5 @@
 #hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/woman-pouring-juice-on-glass-3184192.jpg");
   height: 100vh;
   background-position: center;
@@ -30,7 +30,7 @@
 }
 .hero__subtitle {
   font-size: 2rem;
-  margin: 1rem 0 3rem 0;
+  margin: 2rem 0 3rem 0;
 }
 .hero__btn {
   padding: 1rem 3rem;
