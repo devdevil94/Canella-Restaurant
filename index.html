@@ -214,87 +214,27 @@
         </div>
       </div>
     </section>
-
-    <section id="reservation">
-      <div class="container">
-        <h1 class="reservationHeader__title text-dark">Reserve Now</h1>
-        <!-- <h2 class="reservationHeader__subtitle text-white">
-          Experience the taste of authenticity
-        </h2> -->
-        <div class="separator bg-secondary"></div>
-        <form id="reservation-form" class="reservationForm">
-          <div class="fields--inline">
-            <div class="field">
-              <label class="field__label text-grey" for="name">Name</label>
-              <input type="text" name="name" class="field__input" required />
-              <!-- <span class="field__error" data-for="name"></span> -->
-            </div>
-            <div class="field">
-              <label class="field__label text-grey" for="email">Email</label>
-              <input type="email" name="email" class="field__input" required />
-              <!-- <span class="field__error" data-for="email"></span> -->
-            </div>
-          </div>
-          <div class="fields--inline">
-            <div class="field">
-              <label class="field__label text-grey" for="date">Date</label>
-              <input type="date" name="date" class="field__input" required />
-              <!-- <span class="field__error" data-for="date"></span> -->
-            </div>
-            <div class="field">
-              <label class="field__label text-grey" for="time">Time</label>
-              <input type="time" name="time" class="field__input" required />
-              <!-- <span class="field__error" data-for="time"></span> -->
-            </div>
-            <div class="field">
-              <label class="field__label text-grey" for="persons"
-                >Persons</label
-              >
-              <input
-                type="number"
-                name="persons"
-                class="field__input"
-                min="1"
-                max="10"
-                value="1"
-                required
-              />
-              <!-- <span class="field__error" data-for="persons"></span> -->
-            </div>
-          </div>
-          <button
-            type="submit"
-            class="bg-primary text-white uppercase rounded reservationForm__btn"
-          >
-            Make a reservation
-          </button>
-        </form>
-      </div>
-    </section>
     <section id="events">
       <div class="container">
         <div class="eventsBox">
           <h3 class="text-secondary eventsBox__header1">What's coming next?</h3>
           <h2 class="text-dark eventsBox__header2">Our Upcoming Events</h2>
-          <a
-            href="#!"
-            class="bg-primary text-white uppercase rounded eventsBox__btn"
-          >
-            View More Events
-          </a>
           <div class="eventsBox__topRow">
             <div class="eventsBox__column--half">
-              <a href="#!" class="eventsBox__imgLink--lg">
+              <a href="#!" class="eventsBox__imgLink eventsBox__imgLink--lg">
                 <img
                   src="images/soup-with-vegetables-on-white-ceramic-bowl-3493579.jpg"
                   alt="Lorem Ipsum"
                   class="responsive eventsBox__img"
+                  loading="lazy"
                 />
               </a>
             </div>
             <div class="eventsBox__column--half">
               <div class="eventsBox__eventInfo">
-                <div class="uppercase text-primary eventsBox__date">
+                <div
+                  class="uppercase text-primary eventsBox__date eventsBox__date--lg"
+                >
                   January 11, 2020
                 </div>
                 <h4 class="eventsBox__title eventsBox__title--lg">
@@ -365,7 +305,69 @@
               </h4>
             </div>
           </div>
+          <a
+            href="#!"
+            class="bg-primary text-white uppercase rounded eventsBox__btn"
+          >
+            View More Events
+          </a>
         </div>
+      </div>
+    </section>
+    <section id="reservation">
+      <div class="container">
+        <h1 class="reservationHeader__title text-dark">Reserve Now</h1>
+        <!-- <h2 class="reservationHeader__subtitle text-white">
+          Experience the taste of authenticity
+        </h2> -->
+        <div class="separator bg-secondary"></div>
+        <form id="reservation-form" class="reservationForm">
+          <div class="fields--inline">
+            <div class="field">
+              <label class="field__label text-grey" for="name">Name</label>
+              <input type="text" name="name" class="field__input" required />
+              <!-- <span class="field__error" data-for="name"></span> -->
+            </div>
+            <div class="field">
+              <label class="field__label text-grey" for="email">Email</label>
+              <input type="email" name="email" class="field__input" required />
+              <!-- <span class="field__error" data-for="email"></span> -->
+            </div>
+          </div>
+          <div class="fields--inline">
+            <div class="field">
+              <label class="field__label text-grey" for="date">Date</label>
+              <input type="date" name="date" class="field__input" required />
+              <!-- <span class="field__error" data-for="date"></span> -->
+            </div>
+            <div class="field">
+              <label class="field__label text-grey" for="time">Time</label>
+              <input type="time" name="time" class="field__input" required />
+              <!-- <span class="field__error" data-for="time"></span> -->
+            </div>
+            <div class="field">
+              <label class="field__label text-grey" for="persons"
+                >Persons</label
+              >
+              <input
+                type="number"
+                name="persons"
+                class="field__input"
+                min="1"
+                max="10"
+                value="1"
+                required
+              />
+              <!-- <span class="field__error" data-for="persons"></span> -->
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="bg-primary text-white uppercase rounded reservationForm__btn"
+          >
+            Make a reservation
+          </button>
+        </form>
       </div>
     </section>
     <section id="contact-info" class="bg-primary">
