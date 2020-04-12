@@ -1,7 +1,13 @@
 #events {
   padding: 5rem 0;
 }
-
+.eventsBox {
+  text-align: center;
+}
+.eventsBox__header1,
+.eventsBox__header2 {
+  text-align: center;
+}
 .eventsBox__header1 {
   font-size: 2rem;
   font-family: "Dancing Script", cursive;
@@ -9,6 +15,7 @@
 .eventsBox__header2 {
   font-size: 3rem;
   font-family: "Oswald";
+  margin: 0.5rem 0 2rem 0;
 }
 .eventsBox__btn {
   padding: 2rem 3rem;
@@ -20,23 +27,29 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
+  text-align: left;
 }
 .eventsBox__bottomRow {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .eventsBox__column--half {
   width: 100%;
 }
 .eventsBox__column--half:last-child {
-  padding: 2rem;
-  background-color: wheat;
 }
 .eventsBox__column--third {
-  width: 100%;
+  /* width: 100%; */
+  flex-basis: 100%;
+  /* flex-grow: 2; */
+}
+.eventsBox__column--third:nth-child(1) {
 }
 /*--------- Event Info Box ---------*/
 .eventsBox__eventInfo {
   min-height: 15rem;
+  /* background-color: wheat; */
 }
 .eventsBox__eventInfo > a {
   display: inline-block;
@@ -50,6 +63,7 @@
 }
 .eventsBox__date--lg {
   font-size: 1.6rem;
+  margin-top: 1rem;
 }
 .eventsBox__date--sm {
   font-size: 1.4rem;
@@ -74,10 +88,19 @@
 /*--------- Event Image ---------*/
 .eventsBox__imgLink {
   display: inline-block;
+  object-fit: cover;
 }
+.eventsBox__imgLink--lg {
+  width: 100%;
+  height: 100%;
+}
+.eventsBox__imgLink--lg .eventsBox__img {
+  width: 100%;
+  height: 100%;
+}
+
 .eventsBox__imgLink--sm {
   margin-bottom: 1rem;
-  object-fit: cover;
   width: 14.5rem;
   height: 12rem;
 }
