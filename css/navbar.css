@@ -54,8 +54,9 @@ header {
   display: flex;
   align-items: center;
 }
-.navbar__socialBox {
-  justify-content: end;
+.navbar__socialToggle {
+  position: absolute;
+  right: 0;
 }
 
 .navbar__socialList {
