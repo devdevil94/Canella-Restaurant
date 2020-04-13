@@ -3,7 +3,7 @@
 }
 /* ------------- Menus Header Section ------------- */
 .menuHeader {
-  height: 35rem;
+  height: 30rem;
   margin-bottom: 3rem;
   background-image: url("../images/person-holding-pizza-on-wooden-board-3762075.jpg");
   background-attachment: fixed;
@@ -15,7 +15,7 @@
 }
 .menuHeader::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -31,22 +31,24 @@
 }
 .menuHeader__content {
   max-width: 55rem;
-  z-index: 30;
+  z-index: 10;
 }
-.menuHeader__title,
-.menuHeader__subtitle {
+
+.menuHeader__header1,
+.menuHeader__header2 {
   text-align: center;
   text-shadow: 0 0 5px #000;
 }
-.menuHeader__title {
-  font-size: 6.5rem;
+.menuHeader__header1 {
+  font-size: 2.5rem;
   font-family: "Dancing Script", cursive;
-}
-.menuHeader__subtitle {
-  font-size: 2.8rem;
-  font-family: "Oswald";
   font-weight: normal;
   letter-spacing: 1px;
+}
+.menuHeader__header2 {
+  font-size: 4rem;
+  font-family: "Oswald";
+  letter-spacing: 2px;
 }
 
 /* ------------- Tabs Section ------------- */
@@ -154,6 +156,12 @@
   }
 }
 @media (min-width: 768px) {
+  .menuHeader__header1 {
+    font-size: 3rem;
+  }
+  .menuHeader__header2 {
+    font-size: 4.2rem;
+  }
   .menuBox {
     grid-template-columns: 1fr 1fr;
   }
@@ -177,6 +185,12 @@
   }
 }
 @media (min-width: 992px) {
+  .menuHeader__header1 {
+    font-size: 3.2rem;
+  }
+  .menuHeader__header2 {
+    font-size: 5rem;
+  }
   .tabs__item {
     margin-right: 1rem;
   }
