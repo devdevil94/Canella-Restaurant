@@ -2,28 +2,34 @@
   --top-navbar-height: 8rem;
 }
 
-.navbar {
-  position: relative;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  width: 100%;
+  box-shadow: 0 14px 14px rgba(112, 112, 112, 0.1);
 }
 
 .navbar__top {
   height: var(--top-navbar-height);
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 40;
+  z-index: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 14px 14px rgba(112, 112, 112, 0.1);
+}
+
+.navbar .container {
+  position: relative;
+  height: 100%;
 }
 
 .navbar__menuToggle,
 .navbar__socialToggle {
   font-size: 2rem;
-  height: 100%;
-  width: var(--top-navbar-height);
+  height: 5rem;
+  width: 5rem;
   transition: all 0.3s;
 }
 .navbar__menuToggle:hover,
@@ -39,12 +45,19 @@
   color: var(--primary-color);
 }
 
-.navbar__socialBox {
+.navbar__socialBox,
+.navbar__menuBox {
+  display: block;
   position: relative;
-  /* padding: 0 2rem; */
   height: 100%;
-  width: var(--top-navbar-height);
+  width: 8rem;
+  display: flex;
+  align-items: center;
 }
+.navbar__socialBox {
+  justify-content: end;
+}
+
 .navbar__socialList {
   display: flex;
   position: fixed;
@@ -55,10 +68,12 @@
   padding: 2rem 0;
   box-shadow: 0 14px 14px rgba(112, 112, 112, 0.1);
   transform: translateX(100%);
+  opacity: 0;
   transition: all 0.3s;
 }
 .navbar__socialList.active {
   transform: translateX(0);
+  opacity: 1;
 }
 .navbar__socialItem {
   margin-right: 1rem;
@@ -70,23 +85,17 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   color: white;
   border: 2px solid white;
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   transition: all 0.3s;
 }
 .navbar__socialItem a:hover {
   background-color: white;
   color: var(--primary-color);
-}
-.navbar__socialToggle {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .navbar__brand {
@@ -103,13 +112,15 @@
   position: fixed;
   top: var(--top-navbar-height);
   transform: translateX(-100%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  z-index: 10;
-  transition: transform 0.3s;
+  opacity: 0;
+  box-shadow: 0 25px 10px rgba(0, 0, 0, 0.15);
+  z-index: 0;
+  transition: all 0.3s;
   background-color: rgb(255, 243, 227);
 }
 .navbar__aside.active {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .navbar__link a {
@@ -126,12 +137,12 @@
 }
 
 @media (min-width: 768px) {
+  .navbar__menuBox {
+    width: 135px;
+  }
   .navbar__socialBox {
-    width: auto;
+    width: 135px;
     position: static;
-    display: flex;
-    align-items: center;
-    padding: 0 4rem 0 2rem;
   }
   .navbar__socialToggle {
     display: none;
@@ -142,6 +153,7 @@
     background-color: white;
     box-shadow: none;
     transform: none;
+    opacity: 1;
   }
   .navbar__socialItem {
     margin-right: 0.5rem;
