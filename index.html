@@ -24,31 +24,35 @@
     <title>Canella Restaurant</title>
   </head>
   <body class="bg-white">
-    <header>
+    <header class="bg-white">
       <nav class="navbar">
-        <div class="bg-white navbar__top">
-          <button class="text-dark navbar__menuToggle">
-            <i class="fas fa-bars"></i>
-          </button>
-          <a href="#!" class="navbar__brand text-primary">Canella</a>
-          <div class="navbar__socialBox">
-            <button class="text-dark navbar__socialToggle show">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-            <ul class="navbar__socialList bg-primary">
-              <li class="navbar__socialItem">
-                <a href="#!"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="navbar__socialItem">
-                <a href="#!"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="navbar__socialItem">
-                <a href="#!"><i class="fab fa-google-plus-g"></i></a>
-              </li>
-              <li class="navbar__socialItem">
-                <a href="#!"><i class="fab fa-instagram"></i></a>
-              </li>
-            </ul>
+        <div class="container">
+          <div class="bg-white navbar__top">
+            <span class="navbar__menuBox">
+              <button class="text-dark navbar__menuToggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </span>
+            <a href="#!" class="navbar__brand text-primary">Canella</a>
+            <span class="navbar__socialBox">
+              <button class="text-dark navbar__socialToggle show">
+                <i class="fas fa-ellipsis-h"></i>
+              </button>
+              <ul class="navbar__socialList bg-primary">
+                <li class="navbar__socialItem">
+                  <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="navbar__socialItem">
+                  <a href="#!"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="navbar__socialItem">
+                  <a href="#!"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li class="navbar__socialItem">
+                  <a href="#!"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </span>
           </div>
         </div>
 
@@ -145,10 +149,10 @@
       <div class="menuHeader">
         <div class="container">
           <div class="menuHeader__content">
-            <h1 class="menuHeader__title text-white">Our Menu</h1>
-            <h2 class="menuHeader__subtitle text-white">
-              Experience the taste of authenticity
-            </h2>
+            <h3 class="menuHeader__header1 text-white">
+              The taste of Italian cuisine
+            </h3>
+            <h2 class="menuHeader__header2 text-white">Our Menu</h2>
           </div>
         </div>
       </div>
@@ -219,6 +223,7 @@
         <div class="eventsBox">
           <h3 class="text-secondary eventsBox__header1">What's coming next?</h3>
           <h2 class="text-dark eventsBox__header2">Our Upcoming Events</h2>
+          <div class="separator bg-secondary"></div>
           <div class="eventsBox__topRow">
             <div class="eventsBox__column--half">
               <a href="#!" class="eventsBox__imgLink eventsBox__imgLink--lg">
@@ -226,7 +231,6 @@
                   src="images/soup-with-vegetables-on-white-ceramic-bowl-3493579.jpg"
                   alt="Lorem Ipsum"
                   class="responsive eventsBox__img"
-                  loading="lazy"
                 />
               </a>
             </div>
@@ -262,7 +266,7 @@
               </div>
               <h4 class="eventsBox__title eventsBox__title--sm">
                 <a href="#!" class="uppercase text-dark"
-                  >This is the event title</a
+                  >Lorem ipsum dolor sit amet consectetur</a
                 >
               </h4>
             </div>
@@ -281,7 +285,7 @@
               </div>
               <h4 class="eventsBox__title eventsBox__title--sm">
                 <a href="#!" class="uppercase text-dark"
-                  >This is the event title</a
+                  >Lorem ipsum dolor sit amet consectetur</a
                 >
               </h4>
             </div>
@@ -300,7 +304,7 @@
               </div>
               <h4 class="eventsBox__title eventsBox__title--sm">
                 <a href="#!" class="uppercase text-dark"
-                  >This is the event title</a
+                  >Amet consectetur adipisicing elit magnam</a
                 >
               </h4>
             </div>
@@ -316,10 +320,8 @@
     </section>
     <section id="reservation">
       <div class="container">
-        <h1 class="reservationHeader__title text-dark">Reserve Now</h1>
-        <!-- <h2 class="reservationHeader__subtitle text-white">
-          Experience the taste of authenticity
-        </h2> -->
+        <h3 class="text-secondary eventsBox__header1">Be our guest</h3>
+        <h2 class="text-dark eventsBox__header2">Reserve Now</h2>
         <div class="separator bg-secondary"></div>
         <form id="reservation-form" class="reservationForm">
           <div class="fields--inline">
