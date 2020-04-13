@@ -15,7 +15,7 @@
 .eventsBox__header2 {
   font-size: 3rem;
   font-family: "Oswald";
-  margin: 0.5rem 0 2rem 0;
+  margin-top: 0.5rem;
 }
 .eventsBox__btn {
   padding: 2rem 3rem;
@@ -154,5 +154,8 @@
   }
   .eventsBox__column--half:last-child {
     padding-left: 2rem;
+  }
+  .eventsBox__title--lg a {
+    font-size: 3.2rem;
   }
 }

@@ -1,6 +1,7 @@
 /* ------------- Reservation Form Section ------------- */
 #reservation {
   padding: 5rem 0;
+  /* border-top: 2px solid var(--secondary-color); */
 }
 #reservation-form {
   text-align: center;
@@ -28,7 +29,7 @@
 .field__label {
   margin-bottom: 0.5rem;
   text-align: left;
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
 }
 .field__input {
   padding: 1rem;
