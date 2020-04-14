@@ -56,6 +56,27 @@ $(document).ready(function () {
     }
   });
 
+  const navLinks = $(".navbar__aside > .navbar__link > a");
+  navLinks.each((_, link) =>
+    $(link).click(function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800
+        );
+      }
+    })
+  );
+
+  AOS.init({
+    once: true,
+  });
+
   // $(window).scroll(function () {
   //   if ($(window).scrollTop() >= 80) {
   //     $("header").css("background", "white");
