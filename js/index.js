@@ -55,4 +55,12 @@ $(document).ready(function () {
       socialToggleBtn.removeClass("active");
     }
   });
+
+  // $(window).scroll(function () {
+  //   if ($(window).scrollTop() >= 80) {
+  //     $("header").css("background", "white");
+  //   } else {
+  //     $("header").css("background", "transparent");
+  //   }
+  // });
 });
