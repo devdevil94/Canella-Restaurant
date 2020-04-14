@@ -33,6 +33,7 @@
   font-size: 2.4rem;
   margin: 3rem 0;
   font-family: "Oswald";
+  text-shadow: 0 0 5px #000;
 }
 .hero__btn {
   padding: 2rem 3rem;
